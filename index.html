@@ -1,0 +1,913 @@
+<!DOCTYPE html>sur
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GAME ZONE — Juegos Educativos</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml"
+  href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjMDMwNzEyIi8+CiAgPGxpbmUgeDE9IjAiIHkxPSIxNiIgeDI9IjY0IiB5Mj0iMTYiIHN0cm9rZT0iIzAwZjVmZiIgc3Ryb2tlLXdpZHRoPSIwLjQiIG9wYWNpdHk9IjAuMyIvPgogIDxsaW5lIHgxPSIwIiB5MT0iMzIiIHgyPSI2NCIgeTI9IjMyIiBzdHJva2U9IiMwMGY1ZmYiIHN0cm9rZS13aWR0aD0iMC40IiBvcGFjaXR5PSIwLjMiLz4KICA8bGluZSB4MT0iMCIgeTE9IjQ4IiB4Mj0iNjQiIHkyPSI0OCIgc3Ryb2tlPSIjMDBmNWZmIiBzdHJva2Utd2lkdGg9IjAuNCIgb3BhY2l0eT0iMC4zIi8+CiAgPGxpbmUgeDE9IjE2IiB5MT0iMCIgeDI9IjE2IiB5Mj0iNjQiIHN0cm9rZT0iIzAwZjVmZiIgc3Ryb2tlLXdpZHRoPSIwLjQiIG9wYWNpdHk9IjAuMyIvPgogIDxsaW5lIHgxPSIzMiIgeTE9IjAiIHgyPSIzMiIgeTI9IjY0IiBzdHJva2U9IiMwMGY1ZmYiIHN0cm9rZS13aWR0aD0iMC40IiBvcGFjaXR5PSIwLjMiLz4KICA8bGluZSB4MT0iNDgiIHkxPSIwIiB4Mj0iNDgiIHkyPSI2NCIgc3Ryb2tlPSIjMDBmNWZmIiBzdHJva2Utd2lkdGg9IjAuNCIgb3BhY2l0eT0iMC4zIi8+CiAgPGNpcmNsZSBjeD0iMzIiIGN5PSIzMiIgcj0iMjgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwZjVmZiIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIwLjciLz4KICA8cG9seWdvbiBwb2ludHM9IjUyLDQgNjAsNCA2MCwxMiIgZmlsbD0iIzAwZjVmZiIgb3BhY2l0eT0iMC45Ii8+CiAgPHBvbHlnb24gcG9pbnRzPSI0LDUyIDEyLDUyIDQsNjAiIGZpbGw9IiNiZjVmZmYiIG9wYWNpdHk9IjAuOSIvPgogIDx0ZXh0IHg9IjYiIHk9IjMzIiBmb250LWZhbWlseT0iQXJpYWwgQmxhY2ssc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjkwMCIgZm9udC1zaXplPSIzMCIgZmlsbD0iIzAwZjVmZiI+RzwvdGV4dD4KICA8dGV4dCB4PSIzMCIgeT0iNTgiIGZvbnQtZmFtaWx5PSJBcmlhbCBCbGFjayxzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iOTAwIiBmb250LXNpemU9IjI3IiBmaWxsPSIjYmY1ZmZmIj5aPC90ZXh0Pgo8L3N2Zz4=">
+<link rel="shortcut icon" type="image/x-icon"
+  href="data:image/x-icon;base64,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">
+<style>
+  :root {
+    --bg:     #030712;
+    --panel:  #0c151f;
+    --cyan:   #00f5ff;
+    --green:  #39ff14;
+    --purple: #bf5fff;
+    --orange: #ff6b00;
+    --pink:   #ff2d78;
+    --yellow: #ffe600;
+    --teal:   #00e5b0;
+    --gold:   #ffb800;
+    --red:    #ff4040;
+    --text:   #b8ccd8;
+    --dim:    #3a5570;
+    --border: rgba(0,245,255,0.11);
+  }
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font-family:'Rajdhani',sans-serif;min-height:100vh;overflow-x:hidden}
+
+  /* SCANLINES */
+  body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,0,0,0.04) 3px,rgba(0,0,0,0.04) 4px);pointer-events:none;z-index:9000}
+
+  /* GRID BG */
+  .grid-bg{position:fixed;inset:0;background-image:linear-gradient(rgba(0,245,255,0.022) 1px,transparent 1px),linear-gradient(90deg,rgba(0,245,255,0.022) 1px,transparent 1px);background-size:60px 60px;animation:gridMove 25s linear infinite;z-index:0}
+  @keyframes gridMove{from{background-position:0 0}to{background-position:60px 60px}}
+
+  /* ORBS */
+  .orb{position:fixed;border-radius:50%;filter:blur(120px);opacity:.09;pointer-events:none;z-index:0}
+  .o1{width:700px;height:700px;background:var(--cyan);top:-250px;left:-250px;animation:ob1 18s ease-in-out infinite}
+  .o2{width:600px;height:600px;background:var(--purple);bottom:-200px;right:-200px;animation:ob2 22s ease-in-out infinite}
+  .o3{width:500px;height:500px;background:var(--teal);top:40%;left:40%;animation:ob3 14s ease-in-out infinite}
+  @keyframes ob1{0%,100%{transform:translate(0,0)}50%{transform:translate(70px,50px)}}
+  @keyframes ob2{0%,100%{transform:translate(0,0)}50%{transform:translate(-50px,-70px)}}
+  @keyframes ob3{0%,100%{transform:translate(-50%,-50%) scale(1)}50%{transform:translate(-50%,-50%) scale(1.2)}}
+
+  /* ═══ HEADER ═══ */
+  header{position:relative;z-index:10;text-align:center;padding:60px 24px 32px}
+  .badge{display:inline-flex;align-items:center;gap:10px;font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:4px;color:var(--cyan);border:1px solid rgba(0,245,255,0.35);padding:5px 18px;margin-bottom:20px;animation:pulseBorder 3s ease-in-out infinite}
+  .bdot{width:6px;height:6px;background:var(--green);border-radius:50%;animation:blink 1.4s step-end infinite}
+  @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+  @keyframes pulseBorder{0%,100%{box-shadow:none}50%{box-shadow:0 0 20px rgba(0,245,255,0.15)}}
+  .logo{font-family:'Orbitron',monospace;font-weight:900;font-size:clamp(50px,10vw,108px);line-height:.85;letter-spacing:-3px;background:linear-gradient(140deg,#fff 0%,var(--cyan) 45%,var(--purple) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;filter:drop-shadow(0 0 50px rgba(0,245,255,0.25));animation:logoPulse 5s ease-in-out infinite;user-select:none}
+  @keyframes logoPulse{0%,100%{filter:drop-shadow(0 0 50px rgba(0,245,255,0.25))}50%{filter:drop-shadow(0 0 80px rgba(191,95,255,0.4))}}
+  .logo-sub{font-family:'Share Tech Mono',monospace;font-size:12px;letter-spacing:8px;color:var(--dim);margin-top:14px;text-transform:uppercase}
+
+  /* ═══ STATS ═══ */
+  .stats{position:relative;z-index:10;display:flex;justify-content:center;flex-wrap:wrap;max-width:560px;margin:0 auto 34px;border:1px solid var(--border)}
+  .stat{flex:1;min-width:100px;padding:14px 20px;text-align:center;border-right:1px solid var(--border)}
+  .stat:last-child{border-right:none}
+  .stat-n{font-family:'Orbitron',monospace;font-size:28px;font-weight:700;display:block}
+  .stat-l{font-family:'Share Tech Mono',monospace;font-size:9px;letter-spacing:3px;color:var(--dim);text-transform:uppercase}
+
+  /* ═══ SEARCH ═══ */
+  .search-wrap{position:relative;z-index:10;display:flex;justify-content:center;padding:0 20px 26px}
+  .s-icon{position:absolute;left:calc(50% - 192px);top:50%;transform:translateY(-55%);color:var(--dim);font-size:18px;pointer-events:none}
+  .search-box{font-family:'Share Tech Mono',monospace;font-size:13px;background:var(--panel);border:1px solid var(--border);color:var(--text);padding:13px 20px 13px 48px;width:100%;max-width:450px;outline:none;letter-spacing:1px;clip-path:polygon(14px 0%,100% 0%,calc(100% - 14px) 100%,0% 100%);transition:border-color .2s,box-shadow .2s}
+  .search-box::placeholder{color:var(--dim)}
+  .search-box:focus{border-color:var(--cyan);box-shadow:0 0 30px rgba(0,245,255,0.13)}
+
+  /* ═══ FILTERS ═══ */
+  .filter-bar{position:relative;z-index:10;display:flex;justify-content:center;flex-wrap:wrap;gap:7px;padding:0 20px 42px}
+  .fb{font-family:'Orbitron',monospace;font-size:9px;letter-spacing:2px;padding:9px 15px;border:1px solid var(--dim);background:transparent;color:var(--dim);cursor:pointer;text-transform:uppercase;clip-path:polygon(10px 0%,100% 0%,calc(100% - 10px) 100%,0% 100%);transition:all .2s;position:relative;overflow:hidden}
+  .fb .lbl{position:relative;z-index:1}
+  .fb::before{content:'';position:absolute;inset:0;background:var(--cyan);opacity:0;transition:opacity .2s}
+  .fb:hover,.fb.on{border-color:var(--cyan);color:#000}
+  .fb:hover::before,.fb.on::before{opacity:1}
+  .fb[data-f="programacion"]::before{background:var(--green)}
+  .fb[data-f="programacion"]:hover,.fb[data-f="programacion"].on{border-color:var(--green)}
+  .fb[data-f="creatividad"]::before{background:var(--purple)}
+  .fb[data-f="creatividad"]:hover,.fb[data-f="creatividad"].on{border-color:var(--purple);color:#fff}
+  .fb[data-f="musica"]::before{background:var(--orange)}
+  .fb[data-f="musica"]:hover,.fb[data-f="musica"].on{border-color:var(--orange)}
+  .fb[data-f="logica"]::before{background:var(--yellow)}
+  .fb[data-f="logica"]:hover,.fb[data-f="logica"].on{border-color:var(--yellow)}
+  .fb[data-f="accion"]::before{background:var(--pink)}
+  .fb[data-f="accion"]:hover,.fb[data-f="accion"].on{border-color:var(--pink);color:#fff}
+  .fb[data-f="geografia"]::before{background:var(--teal)}
+  .fb[data-f="geografia"]:hover,.fb[data-f="geografia"].on{border-color:var(--teal)}
+  .fb[data-f="matematica"]::before{background:var(--gold)}
+  .fb[data-f="matematica"]:hover,.fb[data-f="matematica"].on{border-color:var(--gold)}
+  .fb[data-f="ajedrez"]::before{background:var(--red)}
+  .fb[data-f="ajedrez"]:hover,.fb[data-f="ajedrez"].on{border-color:var(--red);color:#fff}
+
+  /* ═══ GRID ═══ */
+  .games-grid{position:relative;z-index:10;display:grid;grid-template-columns:repeat(auto-fill,minmax(288px,1fr));gap:18px;padding:0 40px 80px;max-width:1440px;margin:0 auto}
+
+  /* ═══ CARD ═══ */
+  .card{position:relative;background:var(--panel);border:1px solid var(--border);display:block;text-decoration:none;color:inherit;overflow:hidden;clip-path:polygon(0 0,calc(100% - 22px) 0,100% 22px,100% 100%,22px 100%,0 calc(100% - 22px));transition:transform .35s cubic-bezier(.23,1,.32,1),box-shadow .35s,border-color .35s;animation:cardIn .5s ease backwards}
+  @keyframes cardIn{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+  .card:hover{transform:translateY(-7px) scale(1.015)}
+
+  /* per-cat hover glow */
+  .card[data-cat="diversion"]:hover  {box-shadow:0 24px 60px rgba(0,245,255,.16);border-color:var(--cyan)}
+  .card[data-cat="programacion"]:hover{box-shadow:0 24px 60px rgba(57,255,20,.16);border-color:var(--green)}
+  .card[data-cat="creatividad"]:hover {box-shadow:0 24px 60px rgba(191,95,255,.16);border-color:var(--purple)}
+  .card[data-cat="musica"]:hover      {box-shadow:0 24px 60px rgba(255,107,0,.16);border-color:var(--orange)}
+  .card[data-cat="logica"]:hover      {box-shadow:0 24px 60px rgba(255,230,0,.16);border-color:var(--yellow)}
+  .card[data-cat="accion"]:hover      {box-shadow:0 24px 60px rgba(255,45,120,.16);border-color:var(--pink)}
+  .card[data-cat="geografia"]:hover   {box-shadow:0 24px 60px rgba(0,229,176,.16);border-color:var(--teal)}
+  .card[data-cat="matematica"]:hover  {box-shadow:0 24px 60px rgba(255,184,0,.16);border-color:var(--gold)}
+  .card[data-cat="ajedrez"]:hover     {box-shadow:0 24px 60px rgba(255,64,64,.16);border-color:var(--red)}
+
+  /* corner */
+  .card::after{content:'';position:absolute;top:0;right:0;width:22px;height:22px;clip-path:polygon(100% 0,0 0,100% 100%);opacity:.5;transition:opacity .3s}
+  .card:hover::after{opacity:1}
+  .card[data-cat="diversion"]::after  {background:var(--cyan)}
+  .card[data-cat="programacion"]::after{background:var(--green)}
+  .card[data-cat="creatividad"]::after{background:var(--purple)}
+  .card[data-cat="musica"]::after     {background:var(--orange)}
+  .card[data-cat="logica"]::after     {background:var(--yellow)}
+  .card[data-cat="accion"]::after     {background:var(--pink)}
+  .card[data-cat="geografia"]::after  {background:var(--teal)}
+  .card[data-cat="matematica"]::after {background:var(--gold)}
+  .card[data-cat="ajedrez"]::after    {background:var(--red)}
+
+  /* top line */
+  .cl{height:3px;background:linear-gradient(90deg,currentColor,transparent)}
+  .card[data-cat="diversion"]  .cl{color:var(--cyan)}
+  .card[data-cat="programacion"].cl{color:var(--green)}
+  .card[data-cat="creatividad"].cl{color:var(--purple)}
+  .card[data-cat="musica"]     .cl{color:var(--orange)}
+  .card[data-cat="logica"]     .cl{color:var(--yellow)}
+  .card[data-cat="accion"]     .cl{color:var(--pink)}
+  .card[data-cat="geografia"]  .cl{color:var(--teal)}
+  .card[data-cat="matematica"] .cl{color:var(--gold)}
+  .card[data-cat="ajedrez"]    .cl{color:var(--red)}
+
+  /* scan */
+  .scan{position:absolute;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.25),transparent);top:-2px;opacity:0;pointer-events:none}
+  .card:hover .scan{opacity:1;animation:scanD .55s ease forwards}
+  @keyframes scanD{from{top:0}to{top:100%}}
+
+  .cb{padding:20px 22px 22px}
+  .ct{display:flex;gap:14px;align-items:flex-start;margin-bottom:12px}
+  .ce{font-size:38px;line-height:1;flex-shrink:0;transition:transform .3s;filter:drop-shadow(0 0 8px rgba(255,255,255,.12))}
+  .card:hover .ce{transform:scale(1.2) rotate(-6deg)}
+  .cm{flex:1}
+
+  .cc{font-family:'Share Tech Mono',monospace;font-size:9px;letter-spacing:3px;text-transform:uppercase;margin-bottom:4px}
+  .card[data-cat="diversion"]  .cc{color:var(--cyan)}
+  .card[data-cat="programacion"].cc{color:var(--green)}
+  .card[data-cat="creatividad"].cc{color:var(--purple)}
+  .card[data-cat="musica"]     .cc{color:var(--orange)}
+  .card[data-cat="logica"]     .cc{color:var(--yellow)}
+  .card[data-cat="accion"]     .cc{color:var(--pink)}
+  .card[data-cat="geografia"]  .cc{color:var(--teal)}
+  .card[data-cat="matematica"] .cc{color:var(--gold)}
+  .card[data-cat="ajedrez"]    .cc{color:var(--red)}
+
+  .cn{font-family:'Orbitron',monospace;font-size:15px;font-weight:700;color:#fff;line-height:1.2}
+  .cd{font-size:14px;color:var(--dim);line-height:1.65;margin-bottom:16px;font-weight:300}
+  .cf{display:flex;justify-content:space-between;align-items:center;gap:10px}
+  .tags{display:flex;gap:5px;flex-wrap:wrap}
+  .tag{font-family:'Share Tech Mono',monospace;font-size:8px;padding:3px 7px;border:1px solid var(--dim);color:var(--dim);letter-spacing:1px;text-transform:uppercase}
+
+  .pb{font-family:'Orbitron',monospace;font-size:8px;letter-spacing:2px;padding:8px 14px;background:transparent;white-space:nowrap;text-transform:uppercase;clip-path:polygon(7px 0%,100% 0%,calc(100% - 7px) 100%,0% 100%);transition:all .2s;display:inline-block;text-decoration:none}
+  .card[data-cat="diversion"]  .pb{border:1px solid var(--cyan);color:var(--cyan)}
+  .card[data-cat="programacion"].pb{border:1px solid var(--green);color:var(--green)}
+  .card[data-cat="creatividad"].pb{border:1px solid var(--purple);color:var(--purple)}
+  .card[data-cat="musica"]     .pb{border:1px solid var(--orange);color:var(--orange)}
+  .card[data-cat="logica"]     .pb{border:1px solid var(--yellow);color:var(--yellow)}
+  .card[data-cat="accion"]     .pb{border:1px solid var(--pink);color:var(--pink)}
+  .card[data-cat="geografia"]  .pb{border:1px solid var(--teal);color:var(--teal)}
+  .card[data-cat="matematica"] .pb{border:1px solid var(--gold);color:var(--gold)}
+  .card[data-cat="ajedrez"]    .pb{border:1px solid var(--red);color:var(--red)}
+  .card[data-cat="diversion"]:hover  .pb{background:var(--cyan);color:#000}
+  .card[data-cat="programacion"]:hover.pb{background:var(--green);color:#000}
+  .card[data-cat="creatividad"]:hover.pb{background:var(--purple);color:#fff}
+  .card[data-cat="musica"]:hover     .pb{background:var(--orange);color:#000}
+  .card[data-cat="logica"]:hover     .pb{background:var(--yellow);color:#000}
+  .card[data-cat="accion"]:hover     .pb{background:var(--pink);color:#fff}
+  .card[data-cat="geografia"]:hover  .pb{background:var(--teal);color:#000}
+  .card[data-cat="matematica"]:hover .pb{background:var(--gold);color:#000}
+  .card[data-cat="ajedrez"]:hover    .pb{background:var(--red);color:#fff}
+
+  .card.hidden{display:none}
+
+  .empty{display:none;grid-column:1/-1;text-align:center;padding:80px 20px;font-family:'Share Tech Mono',monospace;color:var(--dim);font-size:13px;letter-spacing:3px}
+  .empty.show{display:block}
+
+  /* FOOTER */
+  footer{position:relative;z-index:10;border-top:1px solid var(--border);padding:36px 20px;text-align:center;font-family:'Share Tech Mono',monospace;font-size:10px;color:var(--dim);letter-spacing:3px}
+  footer strong{color:var(--cyan)}
+
+  /* RESPONSIVE */
+  @media(max-width:768px){
+    .games-grid{padding:0 14px 60px;gap:14px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+    header{padding:44px 16px 26px}
+    .logo{letter-spacing:-1px}
+    .stats{max-width:90vw}
+    .s-icon{left:18px}
+  }
+  @media(max-width:480px){
+    .games-grid{grid-template-columns:1fr}
+    .filter-bar{gap:6px}
+    .fb{font-size:8px;padding:8px 11px}
+    .stat{border-right:none;border-bottom:1px solid var(--border)}
+    .stat:last-child{border-bottom:none}
+    .stats{flex-direction:column}
+  }
+
+  /* ═══ PC: +50% en tarjetas ═══ */
+  @media(min-width:769px){
+    .games-grid{grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:24px}
+    .ce{font-size:57px}
+    .cn{font-size:22px}
+    .cd{font-size:21px;margin-bottom:22px}
+    .cc{font-size:13px;letter-spacing:4px;margin-bottom:6px}
+    .tag{font-size:11px;padding:4px 10px}
+    .pb{font-size:11px;padding:11px 20px}
+    .cb{padding:28px 30px 30px}
+    .ct{gap:20px;margin-bottom:16px}
+    .stat-n{font-size:42px}
+    .stat-l{font-size:13px}
+    .badge{font-size:13px;padding:7px 24px}
+    .logo-sub{font-size:16px;letter-spacing:10px}
+    .fb{font-size:12px;padding:11px 20px}
+    .search-box{font-size:18px;padding:16px 26px 16px 58px;max-width:580px}
+    .s-icon{font-size:24px}
+    footer{font-size:13px}
+  }
+</style>
+</head>
+<body>
+
+<div class="grid-bg"></div>
+<div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div>
+
+<!-- HEADER -->
+<header>
+  <div class="badge"><span class="bdot"></span>SISTEMA ACTIVO · ZONA EDUCATIVA · SIN REGISTRO REQUERIDO<span class="bdot"></span></div>
+  <div class="logo">GAME<br>ZONE</div>
+  <p class="logo-sub">// seleccioná tu misión · todos los juegos free</p>
+  <p class="logo-sub"> *** Profesor Fernando Del Pozzi ***  </p>
+</header>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stat"><span class="stat-n" id="cnt" style="color:var(--cyan)">34</span><span class="stat-l">Juegos</span></div>
+  <div class="stat"><span class="stat-n" style="color:var(--green)">9</span><span class="stat-l">Categorías</span></div>
+  <div class="stat"><span class="stat-n" style="color:var(--purple)">∞</span><span class="stat-l">Diversión</span></div>
+</div>
+
+<!-- SEARCH -->
+<div class="search-wrap">
+  <span class="s-icon">⌕</span>
+  <input class="search-box" type="search" placeholder="BUSCAR JUEGO..." oninput="doSearch(this.value)"/>
+</div>
+
+<!-- FILTERS -->
+<div class="filter-bar">
+  <button class="fb on" data-f="all"          onclick="filter('all',this)">         <span class="lbl">⬡ Todos</span></button>
+  <button class="fb"    data-f="diversion"    onclick="filter('diversion',this)">   <span class="lbl">◈ Diversión</span></button>
+  <button class="fb"    data-f="programacion" onclick="filter('programacion',this)"><span class="lbl">◉ Programación</span></button>
+  <button class="fb"    data-f="matematica"   onclick="filter('matematica',this)">  <span class="lbl">∑ Matemática</span></button>
+  <button class="fb"    data-f="logica"       onclick="filter('logica',this)">      <span class="lbl">⬖ Lógica</span></button>
+  <button class="fb"    data-f="ajedrez"      onclick="filter('ajedrez',this)">     <span class="lbl">♟ Ajedrez</span></button>
+  <button class="fb"    data-f="creatividad"  onclick="filter('creatividad',this)"> <span class="lbl">◆ Creatividad</span></button>
+  <button class="fb"    data-f="musica"       onclick="filter('musica',this)">      <span class="lbl">♫ Música</span></button>
+  <button class="fb"    data-f="accion"       onclick="filter('accion',this)">      <span class="lbl">⚡ Acción</span></button>
+  <button class="fb"    data-f="geografia"    onclick="filter('geografia',this)">   <span class="lbl">🌍 Geografía</span></button>
+</div>
+
+<!-- GRID -->
+<div class="games-grid" id="grid">
+
+  <!-- ── DIVERSIÓN ── -->
+  <a class="card" data-cat="diversion" href="https://neal.fun" target="_blank" rel="noopener">
+    <div class="scan"></div><div class="cl"></div><div class="cb">
+      <div class="ct"><div class="ce">🌐</div><div class="cm"><div class="cc">◈ Diversión</div><div class="cn">Neal Fun</div></div></div>
+      <div class="cd">Experimentos interactivos y curiosidades del mundo. Imposible aburrirse.</div>
+      <div class="cf"><div class="tags"><span class="tag">web</span><span class="tag">curioso</span></div><span class="pb">JUGAR →</span></div>
+    </div>
+  </a>
+
+  <a class="card" data-cat="diversion" href="https://quickdraw.withgoogle.com" target="_blank" rel="noopener">
+    <div class="scan"></div><div class="cl"></div><div class="cb">
+      <div class="ct"><div class="ce">✏️</div><div class="cm"><div class="cc">◈ Diversión</div><div class="cn">Quick Draw</div></div></div>
+      <div class="cd">Dibujá y dejá que la IA de Google adivine qué estás dibujando. ¡Contrarreloj!</div>
+      <div class="cf"><div class="tags"><span class="tag">IA</span><span class="tag">dibujo</span></div><span class="pb">JUGAR →</span></div>
+    </div>
+  </a>
+
+  <a class="card" data-cat="diversion" href="https://sandspiel.club" target="_blank" rel="noopener">
+    <div class="scan"></div><div class="cl"></div><div class="cb">
+      <div class="ct"><div class="ce">⏳</div><div class="cm"><div class="cc">◈ Diversión</div><div class="cn">Sandspiel</div></div></div>
+      <div class="cd">Simulador de arena, agua, fuego y más elementos. Física interactiva hipnótica.</div>
+      <div class="cf"><div class="tags"><span class="tag">física</span><span class="tag">sandbox</span></div><span class="pb">JUGAR →</span></div>
+    </div>
+  </a>
+
+  <a class="card" data-cat="diversion" href="https://toytheater.com" target="_blank" rel="noopener">
+    <div class="scan"></div><div class="cl"></div><div class="cb">
+      <div class="ct"><div class="ce">🎭</div><div class="cm"><div class="cc">◈ Diversión</div><div class="cn">Toy Theater</div></div></div>
+      <div class="cd">Arte, matemática, música y juegos educativos para todas las edades en un solo lugar.</div>
+      <div class="cf"><div class="tags"><span class="tag">variado</span><span class="tag">edu</span></div><span class="pb">JUGAR →</span></div>
+    </div>
+  </a>
+
+  <a class="card" data-cat="diversion" href="https://www.epasatiempos.es/crucigramas.php" target="_blank" rel="noopener">
+    <div class="scan"></div>
+    <div class="cl"></div>
+    <div class="cb">
+      <div class="ct">
+        <div class="ce">🧩</div>
+        <div class="cm">
+          <div class="cc">📚 Diversión</div>
+          <div class="cn">Crucigramas y Pasatiempos</div>
+        </div>
+      </div>
+      <div class="cd">Resolvé crucigramas, sopas de letras y juegos de palabras para aprender y divertirte.</div>
+      <div class="cf">
+        <div class="tags"><span class="tag">crucigramas</span><span class="tag">lengua</span><span
+            class="tag">juegos</span></div><span class="pb">JUGAR →</span>
+      </div>
+    </div>
+  </a>
+
+  <!-- ── PROGRAMACIÓN ── -->
+  <a class="card" data-cat="programacion" href="https://studio.code.org/s/mc/lessons/1/levels/1" target="_blank" rel="noopener">
+    <div class="scan"></div><div class="cl"></div><div class="cb">
+      <div class="ct"><div class="ce">⛏️</div><div class="cm"><div class="cc">◉ Programación</div><div class="cn">Minecraft HoC</div></div></div>
+      <div class="cd">Programá en el mundo de Minecraft con la Hora del Código. ¡Construí y aprendé!</div>
+      <div class="cf"><div class="tags"><span class="tag">bloques</span><span class="tag">minecraft</span></div><span class="pb">JUGAR →</span></div>
+    </div>
+  </a>
+
+  <a class="card" data-cat="programacion" href="https://studio.code.org/courses/coursec-2025/units/1?viewAs=Instructor" target="_blank" rel="noopener">
+    <div class="scan"></div><div class="cl"></div><div class="cb">
+      <div class="ct"><div class="ce">🐦</div><div class="cm"><div class="cc">◉ Programación</div><div class="cn">Angry Birds HoC</div></div></div>
+      <div class="cd">Aprendé programación con bloques usando los Angry Birds. ¡Ideal para iniciarse!</div>
+      <div class="cf"><div class="tags"><span class="tag">bloques</span><span class="tag">fácil</span></div><span class="pb">JUGAR →</span></div>
+    </div>
+  </a>
+
+  <a class="card" data-cat="programacion" href="https://scratch.mit.edu" target="_blank" rel="noopener">
+    <div class="scan"></div><div class="cl"></div><div class="cb">
+      <div class="ct"><div class="ce">🐱</div><div class="cm"><div class="cc">◉ Programación</div><div class="cn">Scratch</div></div></div>
+      <div class="cd">Creá historias, juegos y animaciones programando con bloques visuales del MIT.</div>
+      <div class="cf"><div class="tags"><span class="tag">crear</span><span class="tag">MIT</span></div><span class="pb">JUGAR →</span></div>
+    </div>
+  </a>
+
+  <a class="card" data-cat="programacion" href="https://lightbot.com/hour-of-code.html" target="_blank" rel="noopener">
+    <div class="scan"></div><div class="cl"></div><div class="cb">
+      <div class="ct"><div class="ce">🤖</div><div class="cm"><div class="cc">◉ Programación</div><div class="cn">Lightbot</div></div></div>
+      <div class="cd">Programá un robot de luz para encender baldosas. Lógica secuencial pura.</div>
+      <div class="cf"><div class="tags"><span class="tag">robot</span><span class="tag">secuencia</span></div><span class="pb">JUGAR →</span></div>
+    </div>
+  </a>
+
+  <!-- ── MATEMÁTICA ── -->
+  <a class="card" data-cat="matematica" href="https://www.mathplayground.com/math-games.html" target="_blank" rel="noopener">
+    <div class="scan"></div><div class="cl"></div><div class="cb">
+      <div class="ct"><div class="ce">🏟️</div><div class="cm"><div class="cc">∑ Matemática</div><div class="cn">Math Playground</div></div></div>
+      <div class="cd">+300 juegos de matemática gratis, sin registro. Sumas, fracciones, geometría y más.</div>
+      <div class="cf"><div class="tags"><span class="tag">cálculo</span><span class="tag">K-6</span></div><span class="pb">JUGAR →</span></div>
+    </div>
+  </a>
+
+  <a class="card" data-cat="matematica" href="https://www.coolmathgames.com" target="_blank" rel="noopener">
+    <div class="scan"></div><div class="cl"></div><div class="cb">
+      <div class="ct"><div class="ce">🧮</div><div class="cm"><div class="cc">∑ Matemática</div><div class="cn">Cool Math Games</div></div></div>
+      <div class="cd">El clásico sitio de matemática con juegos, lógica y puzzles. Sin registro, sin violencia.</div>
+      <div class="cf"><div class="tags"><span class="tag">lógica</span><span class="tag">puzzle</span></div><span class="pb">JUGAR →</span></div>
+    </div>
+  </a>
+
+  <a class="card" data-cat="matematica" href="https://www.timestables.com/multiplication-games/" target="_blank" rel="noopener">
+    <div class="scan"></div><div class="cl"></div><div class="cb">
+      <div class="ct"><div class="ce">✖️</div><div class="cm"><div class="cc">∑ Matemática</div><div class="cn">Tablas x Juegos</div></div></div>
+      <div class="cd">Aprendé las tablas de multiplicar jugando. Distintos formatos y niveles. ¡Divertido!</div>
+      <div class="cf"><div class="tags"><span class="tag">multiplicar</span><span class="tag">tablas</span></div><span class="pb">JUGAR →</span></div>
+    </div>
+  </a>
+
+  <a class="card" data-cat="matematica" href="https://www.coolmath4kids.com/" target="_blank" rel="noopener">
+    <div class="scan"></div><div class="cl"></div><div class="cb">
+      <div class="ct"><div class="ce">🎈</div><div class="cm"><div class="cc">∑ Matemática</div><div class="cn">Coolmath4Kids</div></div></div>
+      <div class="cd">Juegos de matemática coloridos y divertidos para los más chicos. Sumas, formas, patrones y más.</div>
+      <div class="cf"><div class="tags"><span class="tag">primaria</span><span class="tag">colores</span></div><span class="pb">JUGAR →</span></div>
+    </div>
+  </a>
+
+  <!-- ── LÓGICA ── -->
+  <a class="card" data-cat="logica" href="https://www.coolmathgames.com/0-bloxorz" target="_blank" rel="noopener">
+    <div class="scan"></div><div class="cl"></div><div class="cb">
+      <div class="ct"><div class="ce">📦</div><div class="cm"><div class="cc">⬖ Lógica</div><div class="cn">Bloxorz</div></div></div>
+      <div class="cd">Deslizá el bloque hasta el agujero sin que caiga. Uno de los puzzles más adictivos del mundo.</div>
+      <div class="cf"><div class="tags"><span class="tag">puzzle</span><span class="tag">clásico</span></div><span class="pb">JUGAR →</span></div>
+    </div>
+  </a>
+
+  <a class="card" data-cat="logica" href="https://plays.org/maze-game/" target="_blank" rel="noopener">
+    <div class="scan"></div><div class="cl"></div><div class="cb">
+      <div class="ct"><div class="ce">🌀</div><div class="cm"><div class="cc">⬖ Lógica</div><div class="cn">Laberinto (Juego)</div></div></div>
+      <div class="cd">15 laberintos cronometrados. Movete con las teclas y escapá antes de que se acabe el tiempo.</div>
+      <div class="cf"><div class="tags"><span class="tag">laberinto</span><span class="tag">timer</span></div><span class="pb">JUGAR →</span></div>
+    </div>
+  </a>
+
+  <a class="card" data-cat="logica" href="https://www.memozor.com/memory-games/for-kids" target="_blank" rel="noopener">
+    <div class="scan"></div><div class="cl"></div><div class="cb">
+      <div class="ct"><div class="ce">🃏</div><div class="cm"><div class="cc">⬖ Lógica</div><div class="cn">Memoria</div></div></div>
+      <div class="cd">Encontrá los pares de cartas y entrenás tu concentración y memoria visual.</div>
+      <div class="cf"><div class="tags"><span class="tag">memoria</span><span class="tag">pares</span></div><span class="pb">JUGAR →</span></div>
+    </div>
+  </a>
+
+  <a class="card" data-cat="logica" href="https://www.jigsawplanet.com" target="_blank" rel="noopener">
+    <div class="scan"></div><div class="cl"></div><div class="cb">
+      <div class="ct"><div class="ce">🧩</div><div class="cm"><div class="cc">⬖ Lógica</div><div class="cn">Puzzles</div></div></div>
+      <div class="cd">Rompecabezas digitales con cientos de imágenes y múltiples niveles de dificultad.</div>
+      <div class="cf"><div class="tags"><span class="tag">puzzle</span><span class="tag">figuras</span></div><span class="pb">JUGAR →</span></div>
+    </div>
+  </a>
+
+  <a class="card" data-cat="logica" href="https://www.coolmathgames.com/0-sugar-sugar" target="_blank" rel="noopener">
+    <div class="scan"></div><div class="cl"></div><div class="cb">
+      <div class="ct"><div class="ce">🍬</div><div class="cm"><div class="cc">⬖ Lógica</div><div class="cn">Sugar Sugar</div></div></div>
+      <div class="cd">Dibujá líneas para guiar el azúcar hasta las tazas. Física + creatividad + lógica.</div>
+      <div class="cf"><div class="tags"><span class="tag">física</span><span class="tag">dibujar</span></div><span class="pb">JUGAR →</span></div>
+    </div>
+  </a>
+
+  <a class="card" data-cat="logica" href="https://poki.com/en/g/fireboy-and-watergirl-forest-temple" target="_blank" rel="noopener">
+    <div class="scan"></div><div class="cl"></div><div class="cb">
+      <div class="ct"><div class="ce">🔥</div><div class="cm"><div class="cc">⬖ Lógica</div><div class="cn">Fireboy & Watergirl</div></div></div>
+      <div class="cd">Puzzles cooperativos con dos personajes. ¡Ideal para jugar en pareja y trabajar en equipo!</div>
+      <div class="cf"><div class="tags"><span class="tag">coop</span><span class="tag">puzzle</span></div><span class="pb">JUGAR →</span></div>
+    </div>
+  </a>
+
+  <a class="card" data-cat="logica" href="https://www.crazygames.com/t/train-your-brain" target="_blank" rel="noopener">
+    <div class="scan"></div>
+    <div class="cl"></div>
+    <div class="cb">
+      <div class="ct">
+        <div class="ce">🧠</div>
+        <div class="cm">
+          <div class="cc">⬖ Lógica</div>
+          <div class="cn">Train Your Brain</div>
+        </div>
+      </div>
+      <div class="cd">Colección de juegos para entrenar la mente: memoria, concentración, reflejos y lógica.</div>
+      <div class="cf">
+        <div class="tags"><span class="tag">cerebro</span><span class="tag">crazygames</span></div><span class="pb">JUGAR
+          →</span>
+      </div>
+    </div>
+  </a>
+  
+  <a class="card" data-cat="logica" href="https://cardgames.io/" target="_blank" rel="noopener">
+    <div class="scan"></div>
+    <div class="cl"></div>
+    <div class="cb">
+      <div class="ct">
+        <div class="ce">🃏</div>
+        <div class="cm">
+          <div class="cc">⬖ Lógica</div>
+          <div class="cn">Card Games</div>
+        </div>
+      </div>
+      <div class="cd">Solitario, Mahjong, Damas, Backgammon y más juegos de cartas y tablero. Sin registro.</div>
+      <div class="cf">
+        <div class="tags"><span class="tag">cartas</span><span class="tag">tablero</span></div><span class="pb">JUGAR
+          →</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="card" data-cat="logica" href="https://lapalabradeldia.com/" target="_blank" rel="noopener">
+    <div class="scan"></div>
+    <div class="cl"></div>
+    <div class="cb">
+      <div class="ct">
+        <div class="ce">🔠</div>
+        <div class="cm">
+          <div class="cc">🔠 Lógica</div>
+          <div class="cn">La palabra del día</div>
+        </div>
+      </div>
+      <div class="cd">Juegos de palabras con diferentes niveles de dificultad.</div>
+      <div class="cf">
+        <div class="tags"><span class="tag">cartas</span><span class="tag">tablero</span></div><span class="pb">JUGAR
+          →</span>
+      </div>
+    </div>
+  </a>
+
+
+  <!-- ── AJEDREZ ── -->
+  <a class="card" data-cat="ajedrez" href="https://lichess.org" target="_blank" rel="noopener">
+    <div class="scan"></div><div class="cl"></div><div class="cb">
+      <div class="ct"><div class="ce">♟️</div><div class="cm"><div class="cc">♟ Ajedrez</div><div class="cn">Lichess</div></div></div>
+      <div class="cd">El mejor ajedrez online gratuito del mundo. Sin ads, sin registro. Jugá contra la IA o contra otros.</div>
+      <div class="cf"><div class="tags"><span class="tag">sin registro</span><span class="tag">IA</span></div><span class="pb">JUGAR →</span></div>
+    </div>
+  </a>
+
+  <a class="card" data-cat="ajedrez" href="https://cardgames.io/chess/" target="_blank" rel="noopener">
+    <div class="scan"></div><div class="cl"></div><div class="cb">
+      <div class="ct"><div class="ce">👑</div><div class="cm"><div class="cc">♟ Ajedrez</div><div class="cn">Ajedrez Clásico</div></div></div>
+      <div class="cd">Ajedrez simple y directo en el navegador. Sin registro. Elegí la dificultad y a jugar.</div>
+      <div class="cf"><div class="tags"><span class="tag">fácil</span><span class="tag">vs IA</span></div><span class="pb">JUGAR →</span></div>
+    </div>
+  </a>
+
+  <a class="card" data-cat="ajedrez" href="https://www.chesskid.com" target="_blank" rel="noopener">
+    <div class="scan"></div><div class="cl"></div><div class="cb">
+      <div class="ct"><div class="ce">🏆</div><div class="cm"><div class="cc">♟ Ajedrez</div><div class="cn">ChessKid</div></div></div>
+      <div class="cd">Ajedrez diseñado especialmente para niños y estudiantes. Puzzles, videos y partidas seguras.</div>
+      <div class="cf"><div class="tags"><span class="tag">niños</span><span class="tag">aprender</span></div><span class="pb">JUGAR →</span></div>
+    </div>
+  </a>
+
+  <!-- ── CREATIVIDAD ── -->
+  <a class="card" data-cat="creatividad" href="https://autodraw.com" target="_blank" rel="noopener">
+    <div class="scan"></div><div class="cl"></div><div class="cb">
+      <div class="ct"><div class="ce">🎨</div><div class="cm"><div class="cc">◆ Creatividad</div><div class="cn">AutoDraw</div></div></div>
+      <div class="cd">Dibujá cualquier cosa y la IA de Google lo convierte en ilustración perfecta. ¡Mágico!</div>
+      <div class="cf"><div class="tags"><span class="tag">IA</span><span class="tag">arte</span></div><span class="pb">JUGAR →</span></div>
+    </div>
+  </a>
+
+  <a class="card" data-cat="creatividad" href="https://sketchpad.app" target="_blank" rel="noopener">
+    <div class="scan"></div><div class="cl"></div><div class="cb">
+      <div class="ct"><div class="ce">🖌️</div><div class="cm"><div class="cc">◆ Creatividad</div><div class="cn">Sketchpad</div></div></div>
+      <div class="cd">Lienzo digital completo para dibujar y pintar libremente en el navegador.</div>
+      <div class="cf"><div class="tags"><span class="tag">pintura</span><span class="tag">libre</span></div><span class="pb">JUGAR →</span></div>
+    </div>
+  </a>
+
+  <a class="card" data-cat="creatividad" href="https://www.canva.com" target="_blank" rel="noopener">
+    <div class="scan"></div><div class="cl"></div><div class="cb">
+      <div class="ct"><div class="ce">✨</div><div class="cm"><div class="cc">◆ Creatividad</div><div class="cn">Canva</div></div></div>
+      <div class="cd">Diseñá afiches, tarjetas y proyectos visuales con plantillas profesionales gratis.</div>
+      <div class="cf"><div class="tags"><span class="tag">diseño</span><span class="tag">visual</span></div><span class="pb">JUGAR →</span></div>
+    </div>
+  </a>
+
+  <!-- ── MÚSICA ── -->
+  <a class="card" data-cat="musica" href="https://musiclab.chromeexperiments.com" target="_blank" rel="noopener">
+    <div class="scan"></div><div class="cl"></div><div class="cb">
+      <div class="ct"><div class="ce">🎵</div><div class="cm"><div class="cc">♫ Música</div><div class="cn">Chrome Music Lab</div></div></div>
+      <div class="cd">Explorá la música con experimentos visuales e interactivos de Google. Ideal para todos.</div>
+      <div class="cf"><div class="tags"><span class="tag">sonido</span><span class="tag">google</span></div><span class="pb">JUGAR →</span></div>
+    </div>
+  </a>
+
+  <a class="card" data-cat="musica" href="https://www.incredibox.com/demo/" target="_blank" rel="noopener">
+    <div class="scan"></div><div class="cl"></div><div class="cb">
+      <div class="ct"><div class="ce">🎤</div><div class="cm"><div class="cc">♫ Música</div><div class="cn">Incredibox</div></div></div>
+      <div class="cd">Armá tu banda de beatboxers arrastrando sonidos. ¡Creá tu propio mix musical!</div>
+      <div class="cf"><div class="tags"><span class="tag">beatbox</span><span class="tag">mix</span></div><span class="pb">JUGAR →</span></div>
+    </div>
+  </a>
+
+  <!-- ── ACCIÓN ── -->
+  <a class="card" data-cat="accion" href="https://beinternetawesome.withgoogle.com/en_us/interland" target="_blank" rel="noopener">
+    <div class="scan"></div><div class="cl"></div><div class="cb">
+      <div class="ct"><div class="ce">🛡️</div><div class="cm"><div class="cc">⚡ Acción</div><div class="cn">Interland</div></div></div>
+      <div class="cd">Aventura de Google sobre seguridad en internet. Aprendé a estar seguro online jugando.</div>
+      <div class="cf"><div class="tags"><span class="tag">seguridad</span><span class="tag">google</span></div><span class="pb">JUGAR →</span></div>
+    </div>
+  </a>
+
+  <a class="card" data-cat="accion" href="https://poki.com/en/g/stickman-hook" target="_blank" rel="noopener">
+    <div class="scan"></div><div class="cl"></div><div class="cb">
+      <div class="ct"><div class="ce">🕷️</div><div class="cm"><div class="cc">⚡ Acción</div><div class="cn">Stickman Hook</div></div></div>
+      <div class="cd">Balanceate de gancho en gancho como un superhéroe. Física adictiva y niveles sin fin.</div>
+      <div class="cf"><div class="tags"><span class="tag">física</span><span class="tag">poki</span></div><span class="pb">JUGAR →</span></div>
+    </div>
+  </a>
+
+  <a class="card" data-cat="accion" href="https://poki.com/en/g/subway-surfers" target="_blank" rel="noopener">
+    <div class="scan"></div><div class="cl"></div><div class="cb">
+      <div class="ct"><div class="ce">🏃</div><div class="cm"><div class="cc">⚡ Acción</div><div class="cn">Subway Surfers</div></div></div>
+      <div class="cd">Corré sin parar esquivando obstáculos. El clásico endless runner en el navegador.</div>
+      <div class="cf"><div class="tags"><span class="tag">runner</span><span class="tag">poki</span></div><span class="pb">JUGAR →</span></div>
+    </div>
+  </a>
+
+  <a class="card" data-cat="accion" href="https://poki.com/en/g/2048" target="_blank" rel="noopener">
+    <div class="scan"></div><div class="cl"></div><div class="cb">
+      <div class="ct"><div class="ce">🔢</div><div class="cm"><div class="cc">⚡ Acción</div><div class="cn">2048</div></div></div>
+      <div class="cd">Deslizá fichas para combinar números y llegar a 2048. Simple de aprender, difícil de dominar.</div>
+      <div class="cf"><div class="tags"><span class="tag">números</span><span class="tag">poki</span></div><span class="pb">JUGAR →</span></div>
+    </div>
+  </a>
+
+  <a class="card" data-cat="accion" href="https://www.pacmangratis.com/" target="_blank" rel="noopener">
+    <div class="scan"></div>
+    <div class="cl"></div>
+    <div class="cb">
+      <div class="ct">
+        <div class="ce">🕹️</div><div class="cm"><div class="cc">⚡ Acción</div><div class="cn">PAC-MAN</div></div>
+      </div>
+      <div class="cd">Recupera las sensaciones de los juegos arcade de los años 80 con PAC-MAN</div>
+      <div class="cf">
+        <div class="tags"><span class="tag">Arcade</span></div><span class="pb">JUGAR</span></div>
+        </div>
+  </a>
+
+  <a class="card" data-cat="accion" href="https://chromedino.com/" target="_blank" rel="noopener">
+    <div class="scan"></div>
+    <div class="cl"></div>
+    <div class="cb">
+      <div class="ct">
+        <div class="ce">🦕</div>
+        <div class="cm">
+          <div class="cc">⚡ Acción</div>
+          <div class="cn">Dinosaurio de Google</div>
+        </div>
+      </div>
+      <div class="cd">El clásico juego del dinosaurio de Chrome. Saltá cactus y esquivá pterodáctilos. ¡Sin internet
+        necesario!</div>
+      <div class="cf">
+        <div class="tags"><span class="tag">clásico</span><span class="tag">saltar</span></div><span class="pb">JUGAR
+          →</span>
+      </div>
+    </div>
+  </a>
+
+
+  <!-- ── GEOGRAFÍA ── -->
+  <a class="card" data-cat="geografia" href="https://www.seterra.com/es/" target="_blank" rel="noopener">
+    <div class="scan"></div><div class="cl"></div><div class="cb">
+      <div class="ct"><div class="ce">🗺️</div><div class="cm"><div class="cc">🌍 Geografía</div><div class="cn">Seterra</div></div></div>
+      <div class="cd">Aprendé capitales, países y continentes con quizzes de mapas. Totalmente en español.</div>
+      <div class="cf"><div class="tags"><span class="tag">mapas</span><span class="tag">países</span></div><span class="pb">JUGAR →</span></div>
+    </div>
+  </a>
+
+  <a class="card" data-cat="geografia" href="https://www.geoguessr.com/es/l/sam" target="_blank" rel="noopener">
+    <div class="scan"></div><div class="cl"></div><div class="cb">
+      <div class="ct"><div class="ce">🌎</div><div class="cm"><div class="cc">🌍 Geografía</div><div class="cn">Países de América del Sur</div></div></div>
+      <div class="cd">Identificá los países de Sudamérica en el mapa. Quiz directo, sin redireccionamientos.</div>
+      <div class="cf"><div class="tags"><span class="tag">sudamérica</span><span class="tag">seterra</span></div><span class="pb">JUGAR →</span></div>
+    </div>
+  </a>
+
+  <a class="card" data-cat="geografia" href="https://www.geoguessr.com/es/quiz/seterra" target="_blank" rel="noopener">
+    <div class="scan"></div><div class="cl"></div><div class="cb">
+      <div class="ct"><div class="ce">🌎</div><div class="cm"><div class="cc">🌍 Geografía</div><div class="cn">Todos los países del mundo</div></div>
+      </div>
+      <div class="cd">Identificá los países del mundo en el mapa. Quiz directo, sin redireccionamientos.</div>
+      <div class="cf"><div class="tags"><span class="tag">países</span><span class="tag">mundo</span></div><span class="pb">JUGAR</span></div>
+    </div>
+  </a>
+
+  <a class="card" data-cat="geografia" href="https://world-geography-games.com/es/banderas_mundo.html" target="_blank" rel="noopener">
+    <div class="scan"></div><div class="cl"></div><div class="cb">
+      <div class="ct"><div class="ce">🏴</div><div class="cm"><div class="cc">🌍 Geografía</div><div class="cn">Banderas del Mundo</div></div></div>
+      <div class="cd">Identificá las banderas de todos los países del mundo. Quiz interactivo en español. ¿Cuántas conocés?</div>
+      <div class="cf"><div class="tags"><span class="tag">banderas</span><span class="tag">mundo</span></div><span class="pb">JUGAR →</span></div>
+    </div>
+  </a>
+
+  <a class="card" data-cat="geografia" href="https://www.google.com/maps" target="_blank" rel="noopener">
+    <div class="scan"></div>
+    <div class="cl"></div>
+    <div class="cb">
+  
+      <div class="ct">
+        <div class="ce">🗺️</div>
+        <div class="cm">
+          <div class="cc">🌍 Geografía</div>
+          <div class="cn">Google Maps</div>
+        </div>
+      </div>
+  
+      <div class="cd">
+        Explorá el mundo en tiempo real. Buscá ciudades, recorré calles con Street View y descubrí lugares increíbles.
+      </div>
+  
+      <div class="cf">
+        <div class="tags">
+          <span class="tag">mapas</span>
+          <span class="tag">google</span>
+          <span class="tag">streetview</span>
+        </div>
+        <span class="pb">EXPLORAR →</span>
+      </div>
+  
+    </div>
+  </a>
+
+  <a class="card" data-cat="geografia" href="https://earth.google.com" target="_blank" rel="noopener">
+    <div class="scan"></div>
+    <div class="cl"></div>
+    <div class="cb">
+      <div class="ct">
+        <div class="ce">🌎</div>
+        <div class="cm">
+          <div class="cc">🌍 Geografía</div>
+          <div class="cn">Google Earth</div>
+        </div>
+      </div>
+      <div class="cd">Explorá el planeta en 3D, viajá por cualquier lugar y descubrí paisajes increíbles desde tu
+        navegador.</div>
+      <div class="cf">
+        <div class="tags"><span class="tag">3D</span><span class="tag">exploración</span></div><span class="pb">EXPLORAR
+          →</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="card" data-cat="geografia"
+    href="https://www.arcgis.com/apps/instant/atlas/index.html?appid=0cd1cdee853c413a84bfe4b9a6931f0d" target="_blank"
+    rel="noopener">
+    <div class="scan"></div>
+    <div class="cl"></div>
+    <div class="cb">
+      <div class="ct">
+        <div class="ce">🛰️</div>
+        <div class="cm">
+          <div class="cc">🌍 Geografía</div>
+          <div class="cn">ArcGIS Atlas</div>
+          <div class="cn">National Geographic</div>
+        </div>
+      </div>
+      <div class="cd">Explorá mapas interactivos con capas de información real. Podés medir, buscar lugares y analizar
+        datos geográficos.</div>
+      <div class="cf">
+        <div class="tags"><span class="tag">mapas</span><span class="tag">datos</span><span class="tag">GIS</span></div>
+        <span class="pb">EXPLORAR →</span>
+      </div>
+    </div>
+  </a>
+  
+
+  <a class="card" data-cat="geografia" href="https://worldview.earthdata.nasa.gov/" target="_blank" rel="noopener">
+    <div class="scan"></div>
+    <div class="cl"></div>
+    <div class="cb">
+      <div class="ct">
+        <div class="ce">🛰️</div>
+        <div class="cm">
+          <div class="cc">🌍 Geografía</div>
+          <div class="cn">NASA Worldview</div>
+        </div>
+      </div>
+      <div class="cd">Observá la Tierra con imágenes satelitales reales: clima, incendios, nubes y más en tiempo real.
+      </div>
+      <div class="cf">
+        <div class="tags"><span class="tag">satélite</span><span class="tag">clima</span></div><span class="pb">EXPLORAR
+          →</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="card" data-cat="geografia" href="https://zoom.earth/" target="_blank" rel="noopener">
+    <div class="scan"></div>
+    <div class="cl"></div>
+    <div class="cb">
+      <div class="ct">
+        <div class="ce">🌐</div>
+        <div class="cm">
+          <div class="cc">🌍 Geografía</div>
+          <div class="cn">Zoom Earth</div>
+        </div>
+      </div>
+      <div class="cd">Seguí el clima en vivo con animaciones del planeta: tormentas, vientos y temperaturas.</div>
+      <div class="cf">
+        <div class="tags"><span class="tag">clima</span><span class="tag">tiempo real</span></div><span
+          class="pb">EXPLORAR →</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="card" data-cat="geografia" href="https://world-geography-games.com/" target="_blank" rel="noopener">
+    <div class="scan"></div>
+    <div class="cl"></div>
+    <div class="cb">
+      <div class="ct">
+        <div class="ce">🧩</div>
+        <div class="cm">
+          <div class="cc">🌍 Geografía</div>
+          <div class="cn">World Geography Games</div>
+        </div>
+      </div>
+      <div class="cd">Juegos educativos para aprender geografía de forma divertida y sencilla.</div>
+      <div class="cf">
+        <div class="tags"><span class="tag">juegos</span><span class="tag">educativo</span></div><span class="pb">JUGAR
+          →</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="card" data-cat="geografia" href="https://virtualvacation.us/guess" target="_blank" rel="noopener">
+    <div class="scan"></div>
+    <div class="cl"></div>
+    <div class="cb">
+      <div class="ct">
+        <div class="ce">🧭</div>
+        <div class="cm">
+          <div class="cc">🌍 Geografía</div>
+          <div class="cn">City Guesser</div>
+        </div>
+      </div>
+      <div class="cd">Adiviná en qué ciudad estás viendo videos reales. Similar a GeoGuessr pero gratis.</div>
+      <div class="cf">
+        <div class="tags"><span class="tag">video</span><span class="tag">ciudades</span></div><span class="pb">JUGAR
+          →</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="card" data-cat="geografia" href="https://earthquake.usgs.gov/earthquakes/map/" target="_blank" rel="noopener">
+    <div class="scan"></div>
+    <div class="cl"></div>
+    <div class="cb">
+      <div class="ct">
+        <div class="ce">🌋</div>
+        <div class="cm">
+          <div class="cc">🌍 Geografía</div>
+          <div class="cn">Mapa de Terremotos</div>
+        </div>
+      </div>
+      <div class="cd">Visualizá terremotos en tiempo real en todo el mundo y analizá su impacto.</div>
+      <div class="cf">
+        <div class="tags"><span class="tag">sismos</span><span class="tag">tiempo real</span></div><span
+          class="pb">EXPLORAR →</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="card" data-cat="geografia" href="https://www.windy.com/" target="_blank" rel="noopener">
+    <div class="scan"></div>
+    <div class="cl"></div>
+    <div class="cb">
+      <div class="ct">
+        <div class="ce">🌬️</div>
+        <div class="cm">
+          <div class="cc">🌍 Geografía</div>
+          <div class="cn">Windy</div>
+        </div>
+      </div>
+      <div class="cd">Mapa interactivo del clima con vientos, lluvias y temperaturas en tiempo real.</div>
+      <div class="cf">
+        <div class="tags"><span class="tag">clima</span><span class="tag">mapa</span></div><span class="pb">EXPLORAR
+          →</span>
+      </div>
+    </div>
+  </a>
+
+  <div class="empty" id="empty">[ SIN RESULTADOS — INTENTÁ CON OTRA BÚSQUEDA ]</div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>⬡ GAME ZONE · <strong>36 JUEGOS</strong> · 9 CATEGORÍAS · SIN REGISTRO · GRATIS ⬡</p>
+  <p style="margin-top:12px;font-size:11px;letter-spacing:4px;color:var(--cyan)">PROF. FERNANDO DEL POZZI</p>
+  <p style="margin-top:8px;font-size:8px;letter-spacing:2px">HACÉ CLIC EN CUALQUIER TARJETA — ABRE EN NUEVA PESTAÑA</p>
+</footer>
+
+<script>
+  const allCards = () => [...document.querySelectorAll('.card[data-cat]')];
+  const empty    = document.getElementById('empty');
+  const cnt      = document.getElementById('cnt');
+  let currentCat = 'all', currentQ = '';
+
+  function updateView() {
+    let vis = 0;
+    allCards().forEach(c => {
+      const catOk = currentCat === 'all' || c.dataset.cat === currentCat;
+      const qOk   = c.innerText.toLowerCase().includes(currentQ);
+      const show  = catOk && qOk;
+      c.classList.toggle('hidden', !show);
+      if (show) {
+        c.style.animationDelay = (vis * 0.05) + 's';
+        c.style.animation = 'none';
+        void c.offsetHeight;
+        c.style.animation = '';
+        vis++;
+      }
+    });
+    cnt.textContent = vis;
+    empty.classList.toggle('show', vis === 0);
+  }
+
+  function filter(cat, btn) {
+    currentCat = cat;
+    document.querySelectorAll('.fb').forEach(b => b.classList.remove('on'));
+    btn.classList.add('on');
+    updateView();
+  }
+
+  function doSearch(v) {
+    currentQ = v.toLowerCase();
+    updateView();
+  }
+
+  // initial stagger
+  allCards().forEach((c, i) => { c.style.animationDelay = (i * 0.05) + 's'; });
+  cnt.textContent = allCards().length;
+</script>
+</body>
+</html>
